@@ -1,0 +1,39 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleIA" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleIA" scope="public">
+    <example>Sarah, es-tu là ?</example>
+    <tag>out.action=new Object(); </tag>
+
+    
+<item>Sarah</item>
+    <one-of>
+      
+
+<item>... soleille<tag>out.action._attributes.tts = "la météo tu sait"</tag></item>
+<item>... pleuvoir<tag>out.action._attributes.tts = "pluie or not tou pluie"</tag></item>
+<item>... temps<tag>out.action._attributes.tts = "au temps susppend"</tag></item>   
+<item>... météo<tag>out.action._attributes.tts = "encore la météo"</tag></item>
+
+      <item>... parle<tag>out.action._attributes.tts = "mais de quoi"</tag></item>
+
+      <item>... partire<tag>out.action._attributes.tts = "non,reste"</tag></item>
+   
+<item>... télai<tag>out.action._attributes.tts = "fait tes devoir"</tag></item>
+<item>... télé<tag>out.action._attributes.tts = "fait tes devoir"</tag></item>
+
+<item>... filmeu<tag>out.action._attributes.tts = "toi et la télé"</tag></item>
+<item>... dvd<tag>out.action._attributes.tts = "toi et les dvd"</tag></item>
+
+<item>... musique<tag>out.action._attributes.tts = "musique"</tag></item>
+<item>... musique+indo<tag>out.action._attributes.tts = "beurk musique indo"</tag></item>
+
+<item>... ziq<tag>out.action._attributes.tts = "hollé"</tag></item>
+
+<item>... lumière<tag>out.action._attributes.tts = "lumière en est tu une"</tag></item>
+<item>... mal au zieu<tag>out.action._attributes.tts = "je baisse la lumière"</tag></item>
+
+<item>... réveil<tag>out.action._attributes.tts = "fait dodo"</tag></item>
+<item>... oroscope<tag>out.action._attributes.tts = "tu crois à sa"</tag></item>
+
+    </one-of>
+  </rule> 
+</grammar>
